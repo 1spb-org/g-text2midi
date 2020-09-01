@@ -1,6 +1,6 @@
 # g-text2midi
 
-This software lets you play some text via MIDI. Almost all you need to construct the MIDI file is probably implemented, but not transposing, no loops, no linking or embedding. 
+This software lets you play some text via MIDI. Almost all you need to construct the MIDI file is probably implemented, but not transposing, no loops, no linking or embedding. Here's an example:
 
 ```json
 {
@@ -56,5 +56,36 @@ Here
 	<Number> is note octave, optional;
 	<NoteName> := C | C# | D | D# | E | F | F# | G | G# | A | A# | B, it's note's name
 /_ or _ means pause with current interval
++<Number> - Increase interval (affects next note's start time)
+-<Number> - Decrease interval (affects next note's start time)
 ```
 
+
+
+Here's yet another example:
+
+```json
+{
+  "Tracks": [
+    {
+      "Commands": [
+        "L100 *4",
+		"/C-E-G-3G /C-3A /D-3A +50 L150 /3B-D -100 L50 /C /D _ +50",
+        "/E-C /E-C  /F-D       +50 L150 /E-C  -100 L50 /D /C _ +50",
+        "/D-C-3G /C-3A /3B-D L250 /C-3G-3C",
+      ],  
+      "Interval": 100,
+      "Instrument": 6,    
+      "Channel": 0 
+    }
+  ],
+  "Description": "God Save The King. Try to continue with https://www.youtube.com/watch?v=R9WpZFY-tTE",
+  "Name": "Example"
+}
+```
+
+
+
+
+
+ 

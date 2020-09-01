@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.128
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT2MGUI", "GT2MidiWin\GT2MGUI.csproj", "{0E119682-D503-4C57-BAEA-17F4D0C3399C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GText2Midi", "GText2Midi\GText2Midi.csproj", "{A4B851C2-E349-4855-B4BB-24076FA3C8AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E119682-D503-4C57-BAEA-17F4D0C3399C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E119682-D503-4C57-BAEA-17F4D0C3399C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E119682-D503-4C57-BAEA-17F4D0C3399C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E119682-D503-4C57-BAEA-17F4D0C3399C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B851C2-E349-4855-B4BB-24076FA3C8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B851C2-E349-4855-B4BB-24076FA3C8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B851C2-E349-4855-B4BB-24076FA3C8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B851C2-E349-4855-B4BB-24076FA3C8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA809846-BF42-4F29-905A-273E7117BB9E}
+	EndGlobalSection
+EndGlobal

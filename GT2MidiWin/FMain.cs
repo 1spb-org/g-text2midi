@@ -18,7 +18,7 @@ namespace GT2MidiWin
     {
 
         static string trnd  = "- Random -";
-        private Dictionary<string, string> _cultures = new Dictionary<string, string>();
+    //  private Dictionary<string, string> _cultures = new Dictionary<string, string>();
 
 
         public FMain()
@@ -100,7 +100,7 @@ namespace GT2MidiWin
 
             try
             {
-                Magician.ParseAndPlay(textBox1.Text);
+                Magician.ParseAndPlay(textBox1.Text, voice);
             }
             catch(Exception ex)
              {

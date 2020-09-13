@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -135,5 +136,14 @@ namespace GT2MidiWin
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var a = Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyFileVersionAttribute>();
+            var v = a.Version;
+            var dr = MessageBox.Show(this, $"George's Text2Midi ver. {v} ){Environment.NewLine}" +
+                $"Navigate to 1spb-org GitHub repo?", Text, MessageBoxButtons.OKCancel);
+            if (dr == DialogResult.OK)
+                System.Diagnostics.Process.Start("https://github.com/1spb-org/g-text2midi");
+        }
     }
 }

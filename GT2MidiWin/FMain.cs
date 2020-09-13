@@ -140,7 +140,7 @@ namespace GT2MidiWin
         {
             var a = Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyFileVersionAttribute>();
             var v = a.Version;
-            var dr = MessageBox.Show(this, $"George's Text2Midi ver. {v} ){Environment.NewLine}" +
+            var dr = MessageBox.Show(this, $"George's Text2Midi ver. {v}.{Environment.NewLine}" +
                 $"Navigate to 1spb-org GitHub repo?", Text, MessageBoxButtons.OKCancel);
             if (dr == DialogResult.OK)
                 System.Diagnostics.Process.Start("https://github.com/1spb-org/g-text2midi");
